@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+  "name": "music-album",
+  "builds": [{ "src": "server/index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/server/index.js" }]
 }
