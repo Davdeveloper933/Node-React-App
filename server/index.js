@@ -8,7 +8,10 @@ const app = express();
 
 // Handle GET requests to /api route
 app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server!" });
+  res.json({
+    message:
+      "Че те надо? че ты вылупился? Уходи отсюда,зачем ты сюда зашел?Говно",
+  });
 });
 
 // All other GET requests not handled before will return our React app
