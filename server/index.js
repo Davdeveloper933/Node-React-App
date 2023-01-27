@@ -17,3 +17,5 @@ app.get("*", (req, res) => {
     path.resolve(__dirname, "../client/build", "index.html")
   );
 });
+
+module.exports = app;
